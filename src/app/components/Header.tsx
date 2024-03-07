@@ -8,7 +8,7 @@ const Header = () => {
 
   return (
     <header className='px-10 sticky z-10 top-0 bg-deepskyblue border-b border-[#333333] shadow-lg w-full flex items-center flex-row justify-between py-3'>
-      <Link className='font-bold' href='/'>
+      <Link prefetch={false} className='font-bold' href='/'>
         PB
       </Link>
       {/* <Dropdown isOpen={isDropdownOpen} open={openDropdown} dropdownAlign='end' /> */}
