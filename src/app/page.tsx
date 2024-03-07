@@ -1,5 +1,5 @@
 import { pb } from '@/lib';
-import Image from 'next/image';
+// import Image from 'next/image';
 import Link from 'next/link';
 import { cache } from 'react';
 export const dynamic = 'force-dynamic';
@@ -27,7 +27,7 @@ export default async function Home() {
           blogs.map((blog: any) => (
             <Link prefetch={true} key={blog.id} className='w-full' href={`/blog/${blog.id}`}>
               <div className='w-full bg-neutral-900 shadow-md '>
-                <Image
+                {/*<Image
                   src={blog.image}
                   loading={blogs[0].id !== blog.id ? 'lazy' : 'eager'}
                   width='800'
@@ -36,6 +36,7 @@ export default async function Home() {
                   alt='blog image'
                   className='w-full object-center object-cover h-[250px]  border border-[#313131] drop-shadow-md'
                 />
+                */}
                 <div className='w-full pt-3 px-2 gap-3 flex items-center justify-start'>
                   {/* <Image
                     alt='user avatar'
