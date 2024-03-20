@@ -1,5 +1,5 @@
 import { pb } from '@/lib';
-// import Image from 'next/image';
+import Image from 'next/image';
 import Link from 'next/link';
 import { cache } from 'react';
 export const dynamic = 'force-dynamic';
